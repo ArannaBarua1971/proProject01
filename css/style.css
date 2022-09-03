@@ -1,5 +1,4 @@
 /* common css part */
-
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +23,13 @@ img {
     margin: 0 auto;
 }
 
-.row,.flex_wrap {
+.container2 {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.row,
+.flex_wrap {
     display: flex;
     flex-wrap: wrap;
 }
