@@ -1,4 +1,9 @@
 /* common css part */
+
+:root{
+    --open: 'Open Sans', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -35,3 +40,32 @@ img {
 }
 
 /* common css part */
+
+/* header section css start */
+#header .topheader{
+    background: #444444;
+    color: #dddddd;
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 13px;
+}
+#header .topheader a{
+    color: #dddddd;
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 13px;
+}
+#header .topheader .row{
+    justify-content: space-between;
+}
+#header .topheader ul li{
+    background: #444444;
+    color: #dddddd;
+    padding: 16px 20px;
+}
+#header .topheader #border{
+    border-left:2px solid #dddddd;
+    border-right:2px solid #dddddd;
+    padding: 16px 20px;
+}
+/* header section css end */
