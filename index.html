@@ -1,17 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Buy</title>
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Raleway:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- font awesome link -->
+  <link rel=" stylesheet" href="css/all.min.css">
+
+  <!-- slik css link -->
+  <link rel="stylesheet" href="css/slick.css">
+
+  <!-- main css link -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-  <!-- Products section part start-->
-  <section id="">
+
+  <!-- preloader section part start-->
+  <div id="preloader">
+    <div class="loader">
+      <div  class="loader" id="l2"></div>
+    </div>
+  </div>
+  <!-- // preloader section part end-->
+
+
+  <!-- header section part start-->
+  <header id="header">
+    <div class="topheader">
+      <div class="container2">
+        <div class="row">
+          <div class="topheader_left">
+            <ul class="flex_wrap">
+              <li>
+                <p>En
+                  <i class="fas fa-caret-down"></i>
+                </p>
+              </li>
+              <li id="border">
+                <p>USD$
+                  <i class="fas fa-caret-down"></i>
+                </p>
+              </li>
+              <li>
+                <p> Toll Free: <a href="tel:+123 4567 8900">+123 4567 8900</a></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="topheader_right">
+            <ul class="flex_wrap">
+              <li>
+                <a href="#">
+                  <i class="fas fa-heart"></i>
+                  wishlist</a>
+              </li>
+              <li id="border">
+                <a href="#">
+                  <i class="fas fa-user"></i>
+                  My Account</a>
+              </li>
+              <li>
+                <a href="#">log in / Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="menu flex_wrap">
+            <ul class="flex_wrap">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Accesorries</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="flex_wrap">
+              <li><i style="line-height: 19px;margin-right: 38px;color: #444444;" class="fas fa-search"></i></li>
+              <li><a class="active" href="#">
+                  <i class="fas fa-shopping-bag" style="margin-right: 4px;"></i>2 items
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <!-- // header section part end-->
+
+  <!-- banner section part -->
+  <section id="banner">
+
+    <div class="slider">
+      <div class="slider_item" style="background: url(img/banner01.png);">
+        <div class="container row">
+          <div class="content">
+            <h2>2017</h2>
+            <span class="change01"></span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+
+            <a href="#">Veiw More</a>
+            <a href="#">Purchase</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider_item" style="background: url(img/banner2.jpg);">
+        <div class="container row">
+          <div class="content">
+            <h2>2017</h2>
+            <span class="change02"></span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+
+            <a href="#">Veiw More</a>
+            <a href="#">Purchase</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider_item" style="background: url(img/banner3.jpg);">
+        <div class="container row">
+          <div class="content">
+            <h2>2017</h2>
+            <span class="change03"></span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+
+            <a href="#">Veiw More</a>
+            <a href="#">Purchase</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- // banner section part -->
+
+  <!-- facility section part -->
+  <section id="facility">
+    <div class="container">
+      <div class="facility_item_part">
+        <div class="row">
+          <div class="faclity_item">
+            <h2>
+              <i class="fas fa-truck"></i>
+              Free Shipping
+            </h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="faclity_item" id="middle_item">
+            <h2 >
+              <i class="far fa-life-ring"></i>
+              24/7 Support
+            </h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="faclity_item">
+            <h2>
+              <i class="far fa-money-bill-alt"></i>
+              Cashback
+            </h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // facility section part -->
+
+  <!-- option section part -->
+  <section id="option">
+    <div class="container">
+      <div class="option_item_part">
+          <div class="row">
+          <div class="option_item">
+            <img src="img/option01.jpg" alt="">
+            <div class="content">
+              <h2>NEW</h2>
+              <h3>Jeans Shirt</h3>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="option_item">
+            <img src="img/0ption02.png" alt="">
+            <div class="content">
+              <h2>2017</h2>
+              <h3>Women’s Glass</h3>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="option_item">
+            <img src="img/option03.png" alt="">
+            <div class="content">
+              <h2>Best</h2>
+              <h3>Mens Shirt</h3>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // option section part -->
+
+  <!-- products section part start-->
+  <section id="products">
       
   </section>
-  <!-- // Products section part end-->
+  <!-- // products section part end-->
+
+
+  <!-- jqurey link -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- tyoed.js link -->
+  <script src="js/typed.min.js"></script>
+  <!-- slick slidr js link -->
+  <script src="js/slick.min.js"></script>
+  <!-- main js link -->
+  <script src="js/app.js"></script>
+>>>>>>> 10f8e0c3df7c89f79f0fd06b3df0a0d28bc16ccf
 </body>
+
 </html>
