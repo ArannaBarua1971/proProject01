@@ -11,14 +11,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Raleway:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300&family=Raleway:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <!-- font awesome link -->
   <link rel=" stylesheet" href="css/all.min.css">
-
   <!-- slik css link -->
   <link rel="stylesheet" href="css/slick.css">
-
+  <!-- venobox css link -->
+  <link rel="stylesheet" href="css/venobox.min.css">
+  <!-- aos css link -->
+  <link rel="stylesheet" href="css/aos.css">
   <!-- main css link -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,14 +43,17 @@
           <div class="topheader_left">
             <ul class="flex_wrap">
               <li>
-                <p>En
-                  <i class="fas fa-caret-down"></i>
-                </p>
+                <select>
+                  <option>En</option>
+                  <option>Bng</option>
+                  <option>Chi</option>
+                </select>
               </li>
               <li id="border">
-                <p>USD$
-                  <i class="fas fa-caret-down"></i>
-                </p>
+                <select>
+                  <option>USD $</option>
+                  <option>BDT ৳</option>
+                </select>
               </li>
               <li>
                 <p> Toll Free: <a href="tel:+123 4567 8900">+123 4567 8900</a></p>
@@ -77,7 +82,7 @@
       </div>
     </div>
 
-    <nav>
+    <nav id="menu">
       <div class="container">
         <div class="row">
           <div class="logo">
@@ -113,12 +118,13 @@
   <section id="banner">
 
     <div class="slider">
-      <div class="slider_item" style="background: url(img/banner01.png);">
+      <div class="slider_item"
+        style="background: url(img/banner01.png);background-position: center;background-size: cover;">
         <div class="container row">
           <div class="content">
-            <h2>2017</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1400">2017</h2>
             <span class="change01"></span>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
+            <p data-aos="fade-up" data-aos-duration="1500">Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
 
             <a href="#">Veiw More</a>
@@ -126,12 +132,13 @@
           </div>
         </div>
       </div>
-      <div class="slider_item" style="background: url(img/banner2.jpg);">
+      <div class="slider_item"
+        style="background: url(img/banner2.jpg);background-position: center;background-size: cover;">
         <div class="container row">
           <div class="content">
-            <h2>2017</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1400">2017</h2>
             <span class="change02"></span>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
+            <p data-aos="fade-up" data-aos-duration="1500">Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
 
             <a href="#">Veiw More</a>
@@ -139,12 +146,13 @@
           </div>
         </div>
       </div>
-      <div class="slider_item" style="background: url(img/banner3.jpg);">
+      <div class="slider_item"
+        style="background: url(img/banner3.jpg);background-position: center;background-size: cover;">
         <div class="container row">
           <div class="content">
-            <h2>2017</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1500">2017</h2>
             <span class="change03"></span>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
+            <p data-aos="fade-up" data-aos-duration="1400">Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
 
             <a href="#">Veiw More</a>
@@ -162,7 +170,7 @@
     <div class="container">
       <div class="facility_item_part">
         <div class="row">
-          <div class="faclity_item">
+          <div class="faclity_item" data-aos="fade-right" data-aos-duration="500">
             <h2>
               <i class="fas fa-truck"></i>
               Free Shipping
@@ -171,7 +179,7 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
           </div>
-          <div class="faclity_item" id="middle_item">
+          <div class="faclity_item" id="middle_item" data-aos="fade-up" data-aos-duration="500">
             <h2>
               <i class="far fa-life-ring"></i>
               24/7 Support
@@ -180,7 +188,7 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
           </div>
-          <div class="faclity_item">
+          <div class="faclity_item" data-aos="fade-left" data-aos-duration="500">
             <h2>
               <i class="far fa-money-bill-alt"></i>
               Cashback
@@ -200,7 +208,7 @@
     <div class="container">
       <div class="option_item_part">
         <div class="row">
-          <div class="option_item">
+          <div class="option_item" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="100">
             <img src="img/option01.jpg" alt="">
             <div class="content">
               <h2>NEW</h2>
@@ -208,15 +216,16 @@
               <a href="#">Shop Now</a>
             </div>
           </div>
-          <div class="option_item">
+          <div class="option_item" data-aos="zoom-in-down" data-aos-duration="600" data-aos-delay="100">
             <img src="img/0ption02.png" alt="">
             <div class="content">
               <h2>2017</h2>
               <h3>Women’s Glass</h3>
               <a href="#">Shop Now</a>
             </div>
+            <p class="newTag">New</p>
           </div>
-          <div class="option_item">
+          <div class="option_item" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="100">
             <img src="img/option03.png" alt="">
             <div class="content">
               <h2>Best</h2>
@@ -230,17 +239,1120 @@
   </section>
   <!-- // option section part -->
 
-  
-  
+  <!-- Featured section part -->
+  <section id="featured" data-aos="fade-up" data-aos-duration="500">
+    <div class="container">
+      <div class="header_part">
+        <h2>Featured Products</h2>
+      </div>
 
+      <div class="menu_for_products">
+        <ul class="flex_wrap">
+          <li id="01" data-filter="all" class="font_color">All</li>
+          <li id="02" data-filter="men" class="border">Men</li>
+          <li id="03" data-filter="women" class="border">Women</li>
+          <li id="04" data-filter="children" class="border">Children</li>
+          <li id="05" data-filter="accesorries" class="border">Accesorries</li>
+        </ul>
+      </div>
+
+      <div class="products_item_part flex_wrap">
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product01.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>Woolen T-Shirt</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product02.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>Silk Skirt</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="men">
+          <div class="img_part">
+            <img src="img/product03.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>Woolen T-Shirt Ash</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products_item filtr-item" data-category="women">
+          <div class="img_part">
+            <img src="img/product04.png" alt="">
+            <div class="overlay">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content flex_wrap">
+            <p>T-Shirt for Women</p>
+            <p>$ 99.00</p>
+          </div>
+          <div class="raitings">
+            <ul class="flex_wrap">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Featured section part -->
+
+
+  <!-- New Products section part -->
+  <section id="Upcoming_products">
+    <div class="container">
+      <div class="row">
+        <div class="upcoming_product_img" >
+          <img src="img/UpcomingProduct.jpg" alt="" >
+        </div>
+        <div class="content">
+          <h3>New Product</h3>
+          <h2>Microsoft Surface Pro</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the
+            industry'sstandard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It hasived not only five centuries, with the release of Letraset
+            sheets.</p>
+          <span>Lanch In</span>
+          <div id="clock" class="flex_wrap"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // New Products section part -->
+
+  <!-- Latest Products section part -->
+  <section id="latest_products">
+    <div class="container">
+      <div class="header_part">
+        <h2>Latest Products</h2>
+      </div>
+      <div class="latest_products_item row">
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProduts01.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>Samsung-GTS</p>
+              <p>$ 99.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProducts02.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>Samsung-Notebook</p>
+              <p>$ 199.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProducts03.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>iPhone-6sPlus</p>
+              <p>$ 99.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProducts04.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>HTC-Bluray 35</p>
+              <p>$ 99.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProducts04.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>HTC-Bluray 35</p>
+              <p>$ 99.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProducts04.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>HTC-Bluray 35</p>
+              <p>$ 99.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProducts04.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>HTC-Bluray 35</p>
+              <p>$ 99.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="latest_products">
+            <div class="img_part">
+              <img src="img/latestProducts04.png" alt="">
+              <div class="overlay">
+                <ul>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                  <li><a href="#">
+                      <i class="fa-solid fa-heart"></i>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content flex_wrap">
+              <p>HTC-Bluray 35</p>
+              <p>$ 99.00</p>
+            </div>
+            <div class="raitings">
+              <ul class="flex_wrap">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Latest Products section part -->
+
+  <!-- testimonial section part -->
+  <section id="testimonial">
+    <div class="header_part">
+      <h2>Testimonial</h2>
+    </div>
+    <div class="testimonialBg">
+      <div class="testimonial_item_part container row">
+        <div class="testimonial">
+          <div class="testimonial_item flex_wrap">
+            <div class="img_part">
+              <img src="img/testimonial01.png" alt="">
+            </div>
+            <div class="content">
+              <h2>ASH Shakir</h2>
+              <h3>Sketch Artist</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into
+                electronic.
+              </p>
+              <img src="img/signature01.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial_item flex_wrap">
+            <div class="img_part">
+              <img src="img/testimonial01.png" alt="">
+            </div>
+            <div class="content">
+              <h2>ASH Shakir</h2>
+              <h3>Sketch Artist</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into
+                electronic.
+              </p>
+              <img src="img/signature01.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial_item flex_wrap">
+            <div class="img_part">
+              <img src="img/testimonial01.png" alt="">
+            </div>
+            <div class="content">
+              <h2>ASH Shakir</h2>
+              <h3>Sketch Artist</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into
+                electronic.
+              </p>
+              <img src="img/signature01.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial_item flex_wrap">
+            <div class="img_part">
+              <img src="img/testimonial01.png" alt="">
+            </div>
+            <div class="content">
+              <h2>ASH Shakir</h2>
+              <h3>Sketch Artist</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into
+                electronic.
+              </p>
+              <img src="img/signature01.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial_item flex_wrap">
+            <div class="img_part">
+              <img src="img/testimonial01.png" alt="">
+            </div>
+            <div class="content">
+              <h2>ASH Shakir</h2>
+              <h3>Sketch Artist</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into
+                electronic.
+              </p>
+              <img src="img/signature01.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // testimonial section part -->
+
+  <!-- blpg section part -->
+  <section id="blog">
+    <div class="container">
+      <div class="header_part">
+        <h2>Our Blog</h2>
+      </div>
+      <div class="blog_item_part">
+        <div class="row">
+          <div class="blog_item" data-aos="fade-up">
+            <div class="img_part">
+              <img src="img/blog01.png" alt="">
+              <div class="overlay">
+                <div class="claender">
+                  <p>
+                    <i class="fas fa-calendar-alt"></i>
+                    26 October 2017
+                  </p>
+                </div>
+                <div class="linkUp">
+                  <a href="img/blog01.png" class="showInBigPage">
+                    <img src="img/linkIcon.png" alt="">
+                  </a>
+                </div>
+                <div class="comments flex_wrap">
+                  <p>
+                    <i class="fas fa-user"></i>
+                    By: Admin
+                  </p>
+                  <p>
+                    <i class="fas fa-thumbs-up"></i>
+                    2.5k Likes
+                  </p>
+                  <p>
+                    <i class="fas fa-comments"></i>
+                    1.5k Comments
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2>Best E-commerce I’d shopping yet</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing andg industry. Lorem Ipsum has been the indusy's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+              </p>
+              <a href="#">
+                Read More
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="blog_item" data-aos="fade-up">
+            <div class="img_part">
+              <img src="img/blog02.png" alt="">
+              <div class="overlay">
+                <div class="claender">
+                  <p>
+                    <i class="fas fa-calendar-alt"></i>
+                    26 October 2017
+                  </p>
+                </div>
+                <div class="linkUp">
+                  <a href="img/blog02.png" class="showInBigPage">
+                    <img src="img/linkIcon.png" alt="">
+                  </a>
+                </div>
+                <div class="comments flex_wrap">
+                  <p>
+                    <i class="fas fa-user"></i>
+                    By: Admin
+                  </p>
+                  <p>
+                    <i class="fas fa-thumbs-up"></i>
+                    2.5k Likes
+                  </p>
+                  <p>
+                    <i class="fas fa-comments"></i>
+                    1.5k Comments
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2>I’m satisfy with their services</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing andg industry. Lorem Ipsum has been the indusy's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+              </p>
+              <a href="#">
+                Read More
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="blog_item" data-aos="fade-up">
+            <div class="img_part">
+              <img src="img/blog03.png" alt="">
+              <div class="overlay">
+                <div class="claender">
+                  <p>
+                    <i class="fas fa-calendar-alt"></i>
+                    26 October 2017
+                  </p>
+                </div>
+                <div class="linkUp">
+                  <a href="img/blog03.png" class="showInBigPage">
+                    <img src="img/linkIcon.png" alt="">
+                  </a>
+                </div>
+                <div class="comments flex_wrap">
+                  <p>
+                    <i class="fas fa-user"></i>
+                    By: Admin
+                  </p>
+                  <p>
+                    <i class="fas fa-thumbs-up"></i>
+                    2.5k Likes
+                  </p>
+                  <p>
+                    <i class="fas fa-comments"></i>
+                    1.5k Comments
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2>I’ll never forget their hospitality</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing andg industry. Lorem Ipsum has been the indusy's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+              </p>
+              <a href="#">
+                Read More
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- // blpg section part -->
+
+  <!-- footer section part -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer01 foot">
+          <img src="img/FooterLogo.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore.
+          </p>
+          <p>
+            magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation.
+          </p>
+        </div>
+        <div class="footer02 foot">
+          <h2>Contact US</h2>
+          <div class="location flex_wrap info">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="http://surl.li/cyjqn">1234, Parkstreet Avenue, NewYork</a>
+          </div>
+          <div class="call flex_wrap info">
+            <i class="fas fa-phone"></i>
+            <p>
+              <a href="callto:+123 456 78900">+123 456 78900</a>,
+              <a href="callto:+009 876 54321">+009 876 54321</a>
+            </p>
+          </div>
+          <div class="email flex_wrap info">
+            <i class="fas fa-envelope"></i>
+            <p>
+              <a href="mailto:info@e-buy.com">info@e-buy.com</a>,
+              <a href="mailto:e-buy@info.com">e-buy@info.com</a>
+            </p>
+          </div>
+          <div class="website flex_wrap info">
+            <i class="fas fa-envelope"></i>
+            <p>
+              <a href="https://www.e-buy.com">www.e-buy.com</a>,
+              <a href="https://www.infobuy.com">www.infobuy.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer03 foot">
+          <h2>My Account</h2>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shopping Cart</a></li>
+            <li><a href="#">Compare</a></li>
+            <li><a href="#">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="footer04 foot">
+          <h2>Sign Up For Newsletter</h2>
+          <form action="">
+            <input type="text" placeholder="Your E-mail">
+            <button type="submit">Submit</button>
+          </form>
+          <h2>Follow me on</h2>
+
+          <div class="social_link flex_wrap">
+            <ul class="flex_wrap">
+              <li><a href="#">
+                <i class="fa fa-facebook-f"></i>
+              </a></li>
+
+              <li><a href="#">
+                <i class="fa fa-twitter"></i>
+              </a></li>
+
+              <li><a href="#">
+                <i class="fa fa-pinterest-p"></i>
+              </a></li>
+
+              <li><a href="#">
+                <i class="fa fa-behance"></i>
+              </a></li>
+
+              <li><a href="#">
+                <i class="fas fa-linkedin-in"></i>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // footer section part -->
+
+  <!-- copyright section part -->
+      <section id="copyright">
+          <div class="container">
+            <div class="row">
+              <p>Copyright 2018. All right reserved by <small>E-BUY</small></p>
+              <div class="image flex_wrap">
+                <a href="#">
+                  <img src="img/visa.png" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/card01.png" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/card03.png" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/card04.png" alt="">
+                </a>
+                <a href="#">
+                  <img src="img/card05.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- // copyright section part -->
+
+
+  <!-- top arrow button section part -->
+      <div id="go_to_top" class="display_none">
+          <a href="#header">
+            <button class="top_arrow_btn">
+              <i class="fas fa-angle-double-up"></i>
+            </button>
+          </a>
+      </div>
+      <!-- // top arrow button section part -->
   <!-- jqurey link -->
   <script src="js/jquery-1.12.4.min.js"></script>
   <!-- tyoed.js link -->
   <script src="js/typed.min.js"></script>
   <!-- slick slidr js link -->
   <script src="js/slick.min.js"></script>
+  <!-- filterizer js link -->
+  <script src="js/jquery.filterizr.min.js"></script>
+  <!-- countdown js link -->
+  <script src="js/jquery.countdown.min.js"></script>
+  <!-- venobox js link -->
+  <script src="js/venobox.min.js"></script>
+  <!-- aos js link -->
+  <script src="js/aos.js"></script>
   <!-- main js link -->
   <script src="js/app.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="time"><p>%S</p><p>Sec</p></div> -->
